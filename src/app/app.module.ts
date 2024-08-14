@@ -13,9 +13,8 @@ import { UserslistComponent } from './userslist/userslist.component';
 @NgModule({
   declarations: [
     AppComponent,
-    feature-header-footer
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
     UserslistComponent
   ],
   imports: [
