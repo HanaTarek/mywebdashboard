@@ -6,11 +6,16 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 import { UserslistComponent } from './userslist/userslist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    feature-header-footer
+    HeaderComponent,
+    FooterComponent
     UserslistComponent
   ],
   imports: [
