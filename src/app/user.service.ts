@@ -9,6 +9,7 @@ import { map, observable, Observable, tap } from 'rxjs';
 export class UserService {
 
   url = "https://reqres.in/api/users?page={page}";
+  oneUrl = "https://reqres.in/api/users/{id}";
 
   constructor( private http : HttpClient) { }
   users : Observable<User>[] = [];
@@ -20,7 +21,7 @@ export class UserService {
       map(response => response.data as User[]));
 
   }
-  
+
   listUsers(page: number): Observable<User[]> {
     const url = this.url.replace('{page}', page.toString());
     return this.http.get<any>(url).pipe(
@@ -38,6 +39,21 @@ export class UserService {
       })
     );
   }
+  getUser(id: string): Observable<User> {
+    const url = this.oneUrl.replace('{id}', id);
+
+    return this.http.get<any>(url).pipe(
+      map(response => {
+        if (response.data) {
+          return response.data as User;
+        } else {
+          throw new Error('User not found');
+        }
+      })
+    );
+  }
+
+
 
 
 }

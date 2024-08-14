@@ -1,0 +1,21 @@
+<div *ngIf="user | async as user">
+
+
+    <div class="boxContainer">
+      <div class="box">
+        <div class="imageIcon">
+        <div class="image-container">
+          <img *ngIf="user.avatar" [src]="user.avatar" alt="user">
+        </div>
+
+      </div>
+
+      <div class="content">
+        <h3 class="Title">{{user.first_name | uppercase }} {{user.last_name | uppercase }}</h3>
+       <div class="description">{{ user.email }}</div>
+      </div>
+
+
+    </div>
+    </div>
+</div>
