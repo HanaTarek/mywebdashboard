@@ -10,6 +10,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { UserslistComponent } from './userslist/userslist.component';
 import { DisplayuserComponent } from './displayuser/displayuser.component';
+import { FormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { DisplayuserComponent } from './displayuser/displayuser.component';
     HttpClientModule,
     BrowserAnimationsModule,
     MatTableModule,
-    MatPaginatorModule
+    FormsModule,
+    MatPaginatorModule,
+    FontAwesomeModule,
+    MatProgressBarModule
   ],
   providers: [
     provideClientHydration()

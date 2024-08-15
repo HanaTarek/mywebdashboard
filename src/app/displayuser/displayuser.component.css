@@ -1,11 +1,39 @@
-.Title {
+i{
+  color:#c50000;
+  font-size: 30px;
+  margin: 10px 40px 5px 40px;
+  cursor: pointer;
+
+}
+.toptitle{
   box-sizing: border-box;
   font-family:'Poppins', sans-serif;
-  font-weight: 700;
+  font-weight: 300;
   color: #333333;
   text-align: left;
   line-height: normal;
-  font-size: 50px;
+  font-size: 30px;
+  margin-top: 50px;
+  text-align: center;
+  float: left;
+}
+#Back{
+  padding-top: 40px;
+}
+.backButtonAndTitle{
+  display: flex;
+  text-align: left;
+  margin-left: 50px;
+
+}
+.Title {
+  box-sizing: border-box;
+  font-family:'Poppins', sans-serif;
+  font-weight: 600;
+  color: #c50000;
+  text-align: left;
+  line-height: normal;
+  font-size: 30px;
 
 }
 .boxContainer{
@@ -16,7 +44,7 @@
 }
 
 .box {
-  width: 55%;
+  width: 50%;
   height: auto;
   padding: 10px;
   border-radius: 5px;
@@ -34,7 +62,7 @@
 img {
   width:300px;
   height: auto; /* Allow the height to adjust based on the width */
-  border-radius: 5px;
+  border-radius: 70%;
   margin: 40 30 40 30px;
   padding: 40 10 40 30px;
   margin-right: 10px;
@@ -45,17 +73,20 @@ img {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
-.description {
+.email {
   font-family: 'Poppins', sans-serif;
   text-align: left;
   line-height: normal;
-  font-size: 30px;
+  font-size: 20px;
   color: #333333;
   flex-grow: 1;
  margin-top: 20px;
+}
+.image-container{
+  margin-left: 10px;
 }
 
 

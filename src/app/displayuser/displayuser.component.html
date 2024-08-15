@@ -1,18 +1,23 @@
+
+
 <div *ngIf="user | async as user">
 
+  <div class="backButtonAndTitle" >
+    <i class="fa-solid fa-angle-left" id="Back" (click)="gotoHomePage()"></i>
+    <h1 class="toptitle">{{user.first_name }} {{user.last_name }} Details</h1>
+    </div>
 
     <div class="boxContainer">
       <div class="box">
-        <div class="imageIcon">
         <div class="image-container">
           <img *ngIf="user.avatar" [src]="user.avatar" alt="user">
         </div>
 
-      </div>
+
 
       <div class="content">
         <h3 class="Title">{{user.first_name | uppercase }} {{user.last_name | uppercase }}</h3>
-       <div class="description">{{ user.email }}</div>
+       <div class="email">{{ user.email }}</div>
       </div>
 
 

@@ -22,23 +22,6 @@ export class UserService {
 
   }
 
-  listUsers(page: number): Observable<User[]> {
-    const url = this.url.replace('{page}', page.toString());
-    return this.http.get<any>(url).pipe(
-      map(data => data)
-    );
-  }
-
-  listUser(page: number): Observable<User[]> | undefined {
-    const url = this.url.replace('{page}', page.toString());
-    return this.http.get<any>(url).pipe(
-      tap((data: any) => {
-        for (const element of data.data) {
-          this.users.push(element);
-        }
-      })
-    );
-  }
   getUser(id: string): Observable<User> {
     const url = this.oneUrl.replace('{id}', id);
 

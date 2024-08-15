@@ -1,4 +1,44 @@
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
 table {
   width: 100%;
+  text-align: center;
+}
+.mylist
+{
+  width:70%;
+  margin: 0 auto;
+}
+.tablehead
+{
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+  color: #c50000;
+}
+.id, .firstname, .lastname, .email{
+  text-align: center;
+  font-size: large;
+  font-weight: 500;
+
+}
+img{
+  margin-left: 20%;
+  border-radius: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.id :hover, .firstname :hover, .lastname :hover, .email :focus{
+  text-decoration: underline;
+
+}
+.id :hover, .id :focus, .id :active, .id :visited{
+  cursor: pointer !important;
+  text-decoration: underline !important;
+
+}
+td{
+  cursor: pointer;
+}
+td:hover{
+  text-decoration: underline;
 }
